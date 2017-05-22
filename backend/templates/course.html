@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ course.name }}</title>
+</head>
+<body>
+<h1>{{ course.name }}</h1>
+<h3>Cost:{{ course.cost }}</h3>
+<p>{{ course.description }}</p>
+<h2>When:
+    <ul>
+        {% for session in course.sessions.all %}
+            <li>{{ session.start_time }}-{{ session.end_time }}</li>
+        {% endfor %}
+    </ul>
+</h2>
+<h2>Who:
+    <ul>
+        {% for professor in course.professors.all %}
+            <li>{{professor.name}}</li>
+        {% endfor %}
+    </ul>
+</h2>
+<button>ENROLL</button>
+
+</body>
+</html>

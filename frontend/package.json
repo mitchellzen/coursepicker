@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.1",
+    "fixed-data-table": "^0.6.4",
+    "jquery": "^3.2.1",
+    "material-ui": "^0.16.7",
+    "react": "^15.5.4",
+    "react-axios": "0.0.9",
+    "react-bootstrap-table": "^3.3.6",
+    "react-dom": "^15.5.4",
+    "react-form": "^1.2.7",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
